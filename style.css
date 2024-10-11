@@ -1,17 +1,56 @@
 :root {
-    
+    --colorDarkestGray: #050505;
+    --colorDarkerGray: #121212;
+    --colorDarkGrey: #353535;
+    --colorGray: #666666;
+    --colorLightGray: #7f7f7f;
+    --colorLighterGray: #999999;
+    --colorLightestGray: #e5e5e5;
+    --colorDirtyWhite: #f4f4f4;
+    --colorBlue: #087fe7;
+    --shadowColorDark: rgba(0, 0, 0, 0.2);
+    --shadowColorLight: rgba(0, 0, 0, 0.1);
+    --fontSizeXXXXS: 12px;
+    --fontSizeXXXS: 13px;
+    --fontSizeXXS: 13.5px;
+    --fontSizeXS: 14px;
+    --fontSizeS: 15px;
+    --fontSizeM: 18px;
+    --fontSizeL: 24px;
+    --fontSizeXL: 26px;
+    --fontSizeXXL: 36px;
+    --fontSizeXXXL: 45px;
+    --fontSizeXXXXL: 53px;
+    --fontWeightBoldest: 650;
+    --fontWeightBolder: 550;
+    --fontWeightBolder: 450;
+    --fontWeightLight: 400;
+    --fontWeightLighter: 320;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(material/Inter.ttf);
 }
 
 body {
     margin: 0;
-   /* width: auto; */
+    /* width: auto; */
     margin: 10px 20px;
+    background-color: var(--colorDirtyWhite);
+    font-family: Inter, Arial, Helvetica, sans-serif;
+
 }
 
 header {
-    border-bottom: 2px solid #e5e5e5;
+    background-color: var(--colorDirtyWhite);
+    border-bottom: 2px solid var(--colorLightestGray);
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
 }
 
 nav {
@@ -26,6 +65,7 @@ nav {
 
 .barkyIcon {
     width: 100px;
+    margin: 0;
 }
 
 #navRight {
@@ -37,28 +77,92 @@ nav a {
     padding: 10px;
     text-decoration: none;
     color: black;
+    font-size: var(--fontSizeS);
 }
 
 nav img {
     margin-left: 10px;
+    display: inline;
 }
 
 .barkyButton {
+    padding: 10px;
+    text-decoration: none;
+    font-size: var(--fontSizeS);
     background-color: black;
     color: white;
+    font-weight: var(--fontWeightBolder);
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 01);
+
 }
 
 #navVertLine {
     width: 100%;
     height: 50%;
     align-self: center;
-    border-right: solid 2px;
+    border-right: var(--colorLightestGray) solid 2px;
 }
 
 #hamburgerIcon {
     display: none;
+}
+
+main {
+    max-width: 1000px;
+    height: 100vh;
+    margin: 150px auto;
+}
+
+#section1 {
+    display: flex;
+
+}
+
+#section1 img {
+    width: 500px;
+}
+
+#iconSection {
+    margin: 50px 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 2px solid var(--colorLightestGray);
+    border-bottom: 2px solid var(--colorLightestGray);
+}
+
+#iconSection img {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+    align-items: center;
+    margin: 10px 15px;
+}
+
+.uspIntro {
+    max-width: 450px;
+    margin: 50px 0;
+}
+
+.uspSection img {
+    display: block;
+    max-width: 1000px;
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px 20px var(--shadowColorLight);
+}
+
+.uspSectionQuote {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.uspFriends {
+    display: flex;
+    justify-content: center;
+
 }
 
 
