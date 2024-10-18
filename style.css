@@ -151,6 +151,20 @@ nav img {
     box-shadow: 2px 2px 5px var(--shadowColorLight)
 }
 
+.navLeftBottomContainer p {
+    margin: 0;
+    font-size: var(--fontSizeXXS)
+}
+
+.navLeftBottomItem {
+    margin: 0;
+    font-size: var(--fontSizeXXS);
+    color: var(--colorDarkerGray);
+    font-weight: var(--fontWeightBolder);
+}
+
+
+
 
 
 main {
