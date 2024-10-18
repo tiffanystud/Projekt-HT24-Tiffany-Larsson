@@ -163,8 +163,25 @@ nav img {
     font-weight: var(--fontWeightBolder);
 }
 
+#dropDownItemLink {
+    font-size: var(--fontSizeXXXXS);
+}
+
+#dropDownItemLink a {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    color: var(--colorLightGray);
+    font-size: var(--fontSizeXXXXS);
+}
+
+#dropDownItemLink {
+    color: var(--colorLightGray);
+}
 
 
+
+/*-- /End dropdown menu -- */
 
 
 main {
