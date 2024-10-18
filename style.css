@@ -46,7 +46,6 @@ p {
     font-size: var(--fontSizeM);
 }
 
-
 body {
     width: 100%;
     margin: 0;
@@ -410,9 +409,7 @@ footer a:hover {
     transition: 200ms;
 }
 
-
 /*-- Media queries --*/
-
 
 @media (max-width: 1080px) {
     nav a {
@@ -439,7 +436,7 @@ footer a:hover {
     #navVertLine {
         display: none;
     }
-    
+
     #section1 {
         display: flex;
         flex-direction: column-reverse;
@@ -463,6 +460,10 @@ footer a:hover {
         grid-template-areas:
             "item1 item2"
             "item3 item4";
+    }
+
+    .statisticsDiv div {
+        border:0;
     }
 
     #statisticsItem1 {
