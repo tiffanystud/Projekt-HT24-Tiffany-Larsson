@@ -134,6 +134,23 @@ nav img {
     display: none;
 }
 
+.navLeftBottomItem {
+    border-radius: 5px;
+    padding: 5px 40px 5px 10px;
+}
+
+.navLeftProductItem {
+    display: flex;
+}
+
+.navLeftBottomItem img {
+    width: 20px;
+    padding: 5px;
+    margin: 0px 15px 0px 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--shadowColorLight)
+}
+
 
 
 main {
