@@ -179,7 +179,13 @@ nav img {
     color: var(--colorLightGray);
 }
 
+.bottomNavFirstItemText p:nth-child(1) {
+    color: var(--colorDarkerGray);
+}
 
+.bottomNavFirstItemText p:nth-child(2) {
+    font-weight: initial;
+}
 
 /*-- /End dropdown menu -- */
 
