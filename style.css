@@ -474,7 +474,17 @@ nav a:hover {
 
 .barkyButton:hover {
     background-color: #353535;
+    /* ** */
     transition: 100ms;
+}
+
+.navLeftTopContainer:hover .navLeftBottomContainer {
+    display: flex;
+}
+
+.navLeftBottomItem:hover {
+    background-color: var(--colorDirtyWhite);
+    cursor: pointer;
 }
 
 footer a:hover {
@@ -483,7 +493,6 @@ footer a:hover {
 }
 
 /*-- Media queries --*/
-
 @media (max-width: 1080px) {
     nav a {
         display: none;
