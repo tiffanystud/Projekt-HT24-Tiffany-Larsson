@@ -87,7 +87,7 @@ nav a {
     margin: 5px;
     padding: 10px;
     text-decoration: none;
-    color: black;
+    color: var(--colorDarkestGray);
     font-size: var(--fontSizeS);
 }
 
