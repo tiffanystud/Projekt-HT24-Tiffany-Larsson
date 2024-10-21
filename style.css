@@ -295,7 +295,7 @@ nav img {
 .uspSection img {
     max-width: 100%;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px 5px var(--shadowColorLight);
+    box-shadow: 0 0 30px var(--shadowColorLight);
 }
 
 .uspSectionQuote h2 {
