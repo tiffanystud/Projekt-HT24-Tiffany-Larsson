@@ -121,6 +121,7 @@ nav img {
 /*-- Dropdown menu --*/
 .navLeftTopContainer {
     position: relative;
+    display: flex;
 }
 
 .navLeftBottomContainer {
@@ -201,12 +202,56 @@ section {
 
 /* -- Section 1 -- */
 #section1 {
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 0;
+}
+
+#section1div1 {
     display: flex;
-    border-bottom: 0px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#section1img {
+    flex-basis: 0;
 }
 
 #section1 img {
-    width: 500px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#section1 h1 {
+    margin: 0px;
+    font-size: var(--fontSizeXXXL);
+}
+
+#section1 p {
+    margin: 0px 0px 10px 0px;
+    font-size: var(--fontSizeS);
+    width: 80%;
+}
+
+#section1 a {
+    width: max-content;
+}
+
+#section1div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* -- Section 2 (icon) -- */
+#section2 {
+    border-bottom: 0px;
+    padding: 0;
 }
 
 #iconSection {
@@ -227,23 +272,14 @@ section {
 }
 
 
-/* -- Section 2 -- */
-#section2 {
-    border-bottom: 0px;
-    padding: 0;
-}
-
-
 /* -- Section 3 -- */
-.uspSection img {
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 20px 20px 20px 20px var(--shadowColorLight);
+.uspIntro {
+    max-width: 55%;
 }
 
-.uspIntro {
-    max-width: 450px;
-    margin: 50px 0;
+.uspIntro h2 {
+    margin: 0;
+    font-size: var(--fontSizeXXL);
 }
 
 .uspSectionQuote {
@@ -253,7 +289,14 @@ section {
     text-align: center;
 }
 
+.uspSection img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 5px var(--shadowColorLight);
+}
+
 .uspSectionQuote h2 {
+    color: var(--colorLighterGray);
     font-size: var(--fontSizeXXL);
     font-weight: var(--fontWeightBolder);
 }
@@ -265,6 +308,7 @@ section {
 .uspFriends {
     display: flex;
     justify-content: center;
+    margin-bottom: 70px;
 }
 
 .uspFriends>div>* {
@@ -273,6 +317,10 @@ section {
 
 .uspFriends>div {
     align-content: center;
+}
+
+.uspFriends h3 {
+    font-weight: var(--fontWeightBolder);
 }
 
 .uspFriends img {
@@ -297,10 +345,11 @@ section {
 
 #freePlan h2 {
     margin-bottom: 0;
+    font-weight: var(--fontWeightBoldest);
 }
 
 #freePlan p {
-    margin-bottom: 30px;
+    margin: 10px 0px 30px 0px;
 }
 
 #checklist {
@@ -312,6 +361,10 @@ section {
     color: var(--colorGray);
     display: flex;
     flex-direction: column;
+}
+
+#checklist p {
+    margin: 10px;
 }
 
 #rightItemCheckList {
@@ -365,13 +418,11 @@ section {
 
 #dogLoveDiv {
     text-align: left;
-    display: flex;
-    gap: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
 }
 
-#dogLoveDiv div {
-    width: 50%;
-}
 
 #dogLoveDivText h3 {
     font-size: var(--fontSizeL);
@@ -383,7 +434,8 @@ section {
 }
 
 #dogLoveDiv img {
-    width: 50%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .statisticsDiv {
@@ -417,7 +469,7 @@ section {
 
 #barkyDiv h2 {
     margin-bottom: 0;
-    font-weight: var(--fontWeightBolder);
+    font-weight: var(--fontWeightBoldest);
 }
 
 #barkyDiv a {
@@ -429,7 +481,14 @@ section {
 /* -- Footer -- */
 footer {
     display: flex;
+    justify-content: center;
     border-top: 2px solid var(--colorLightestGray);
+    margin: 0px 20px;
+}
+
+footer h4 {
+    font-weight: var(--fontWeightBolder);
+    margin: 0;
 }
 
 footer a {
@@ -438,7 +497,7 @@ footer a {
 }
 
 #footerSection {
-    width: 100%;
+    max-width: 1200px;
     display: flex;
     gap: 50px;
     margin: 0;
@@ -452,23 +511,33 @@ footer a {
     gap: 30px;
 }
 
+#footerBarky p {
+    margin: 0;
+}
+
+footer .barkyIcon {
+    width: 50%;
+}
+
 .footerColumns {
     flex-basis: 0;
     flex-grow: 1;
+
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 #footerShare {
-    display: flex;
-    gap: 8px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
 
 #footerShare img {
-    width: 15px;
+    width: auto;
 }
-
 
 
 /*-- User interaction--*/
@@ -508,6 +577,9 @@ footer a:hover {
 
     main {
         width: calc(100% - 10%);
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
     }
 
     .barkyButton {
@@ -531,6 +603,16 @@ footer a:hover {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
+    }
+
+    #section1div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section1img {
+        width: calc(100% - 40%);
     }
 
     #teamDiv {
